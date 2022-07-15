@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="westtle">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Reading List</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+</head>
+<body>
+	<div class="container__all">
+		<h1>My Reading List</h1>
+		
+		<div id="add-book">
+			<form>
+				<fieldset>
+					<legend>Add Book</legend>
+					<input id="input_title" type="text" placeholder="title" maxlength="55">
+					<input id="input_author" type="text" placeholder="author" maxlength="55">
+					<input type="submit" value="Add">
+					<br>
+					<input id="plan-to-read" type="radio" name="reading-status" value="Plan-To-Read">
+					<label for="plan-to-read">Plan To Read</label>
+					<input id="reading"type="radio" name="reading-status" value="Reading">
+					<label for="reading">Reading</label>
+					<input id="completed" type="radio" name="reading-status" value="Completed">
+					<label for="completed">Completed</label>
+				</fieldset>
+			</form>
+		</div>
+
+		<nav>		
+			<a href="#status__plan-to-read">Plan To Read</a>
+			<a href="#status__reading">Reading</a>
+			<a href="#status__completed">Completed</a>	
+		</nav>
+
+		<div id="status__plan-to-read">
+			<fieldset>
+				<legend>Plan To Read</legend>
+				<div class="book-list empty">
+					<span class="empty1">[Empty]</span>
+				</div>
+			</fieldset>
+		</div>
+		<div id="status__reading">
+			<fieldset>
+				<legend>Reading</legend>
+				<div class="book-list empty">
+					<span class="empty2">[Empty]</span>
+				</div>
+			</fieldset>
+		</div>
+		<div id="status__completed">
+			<fieldset>
+				<legend>Completed</legend>
+				<div class="book-list empty">
+					<span class="empty3">[Empty]</span>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/script/script.js"></script>
+</body>
+</html>

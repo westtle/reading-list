@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+.container__all {
+	max-width: 500px;
+	margin: 10vh auto 0 auto;
+	text-align: center;
+}
+
+#add-book,
+#status__plan-to-read,
+#status__reading,
+#status__completed {
+	margin-bottom: 6px;
+	overflow: auto;
+	box-shadow: 0 3px 3px -2px;
+}
+
+#status__completed {
+	margin-bottom: 10vh;
+}
+
+#add-book {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+nav {
+	margin-bottom: 100px;
+}
+
+nav a {
+	margin: 0 2px;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="radio"] {
+	margin-top: 8px;
+}
+
+input[type="submit"],
+button {
+	color: GrayText;
+	background: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	margin: 3px 1px;
+	cursor: pointer;
+}
+
+label {
+	font-size: 15px;
+}
+
+fieldset {
+	border: 1px solid black;
+}
+
+.book-title {
+	font-size: 18px;
+}
+
+.book-author {
+	font-size: 14px;
+}
+
+.book-item {
+	border: 1px solid black;
+	border-radius: 2px;
+	margin-bottom: 8px;
+	text-align: start;
+}
+
+.book-item button {
+	float: right;
+}
+
+.empty {
+	font-size: 13px;
+	opacity: 0.8;
+}
